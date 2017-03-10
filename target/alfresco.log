@@ -1,0 +1,87 @@
+11:34:31,980 INFO  [org.alfresco.repo.admin] Using database URL 'jdbc:h2:/opt/alfresco/alfresco-amp/albasoft-mvn-amp-repo/alf_data_dev/h2_data/alf_dev;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;MVCC=FALSE;LOCK_MODE=0' with user 'alfresco'.
+11:34:32,474 INFO  [org.alfresco.repo.admin] Connected to database H2 version 1.4.190 (2015-10-11)
+11:34:37,968 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Ignoring script patch (post-Hibernate): patch.db-V4.2-metadata-query-indexes
+11:34:37,968 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Ignoring script patch (post-Hibernate): patch.db-V5.1-metadata-query-indexes
+11:34:44,987 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] Registered template processor Repository Template Processor for extension ftl
+11:34:44,991 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] Registered script processor Repository Script Processor for extension js
+11:34:48,416 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'ContentStore' subsystem, ID: [ContentStore, managed, unencrypted]
+11:34:48,472 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'ContentStore' subsystem, ID: [ContentStore, managed, unencrypted] complete
+11:34:48,495 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Connecting to database: jdbc:h2:/opt/alfresco/alfresco-amp/albasoft-mvn-amp-repo/alf_data_dev/h2_data/alf_dev, UserName=ALFRESCO, H2 JDBC Driver
+11:34:48,495 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] Schema managed by database dialect org.hibernate.dialect.H2Dialect.
+11:34:48,799 INFO  [org.alfresco.repo.domain.schema.SchemaBootstrap] No changes were made to the schema.
+11:34:49,006 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1]
+11:34:49,178 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Authentication' subsystem, ID: [Authentication, managed, alfrescoNtlm1] complete
+11:34:49,814 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'thirdparty' subsystem, ID: [thirdparty, default]
+11:34:49,881 ERROR [org.alfresco.repo.content.transform.magick.AbstractImageMagickContentTransformerWorker] ImageMagickContentTransformerWorker not available: 02100001 Failed to perform ImageMagick transformation: 
+Execution result: 
+   os:         Linux
+   command:    ./ImageMagick/bin/convert /opt/alfresco/alfresco-amp/albasoft-mvn-amp-repo/target/Alfresco/ImageMagickContentTransformerWorker_init_source_7679947213502203335.gif /opt/alfresco/alfresco-amp/albasoft-mvn-amp-repo/target/Alfresco/ImageMagickContentTransformerWorker_init_target_3111991800206659118.png
+   succeeded:  false
+   exit code:  1
+   out:        
+   err:        Cannot run program "./ImageMagick/bin/convert": error=2, No such file or directory
+11:34:49,882 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'thirdparty' subsystem, ID: [thirdparty, default] complete
+11:34:49,882 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'OOoDirect' subsystem, ID: [OOoDirect, default]
+11:34:50,206 WARN  [org.alfresco.util.OpenOfficeConnectionTester] Error trying to query Open Office version information. OpenOffice.org's ConfigurationRegistry not implemented in this version of OOo. This should not affect the operation of OOo.
+11:34:50,209 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'OOoDirect' subsystem, ID: [OOoDirect, default] complete
+11:34:50,211 INFO  [org.alfresco.repo.admin.ConfigurationChecker] The Alfresco root data directory ('dir.root') is: /opt/alfresco/alfresco-amp/albasoft-mvn-amp-repo/alf_data_dev
+11:34:50,211 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Search' subsystem, ID: [Search, hidden]
+11:34:50,892 ERROR [org.alfresco.repo.search.impl.lucene.fts.FullTextSearchIndexerBootstrapBean] The lucene search subsystem is not supported. Please see http://docs.alfresco.com/null.null/tasks/lucene-solr4-migration.html
+11:34:50,894 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Search' subsystem, ID: [Search, hidden] complete
+11:34:50,912 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] Checking for patches to apply ...
+11:34:51,114 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] 	Applying patch 'patch.siteLoadPatch.swsdp' (Loads a sample site into the repository.).
+11:34:51,300 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'sysAdmin' subsystem, ID: [sysAdmin, default]
+11:34:51,321 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'sysAdmin' subsystem, ID: [sysAdmin, default] complete
+11:34:54,637 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Transformers' subsystem, ID: [Transformers, default]
+11:34:54,823 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Transformers' subsystem, ID: [Transformers, default] complete
+11:34:57,077 INFO  [org.alfresco.repo.admin.patch.PatchExecuter] 
+=== Applied patch                 === 
+ID: patch.siteLoadPatch.swsdp
+RESULT: 
+Site swsdp imported.
+=====================================
+11:34:57,095 INFO  [org.alfresco.repo.module.ModuleServiceImpl] Found 2 module package(s).
+11:34:57,106 INFO  [org.alfresco.repo.module.ModuleServiceImpl] Starting module 'albasoft-mvn-amp-repo' version 1.0-SNAPSHOT.
+11:34:57,121 INFO  [org.alfresco.repo.module.ModuleServiceImpl] Installing module 'alfresco-share-services' version 5.1.0.
+11:34:57,275 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'fileServers' subsystem, ID: [fileServers, default]
+11:34:57,627 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'fileServers' subsystem, ID: [fileServers, default] complete
+11:34:57,636 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'imap' subsystem, ID: [imap, default]
+11:34:57,742 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'imap' subsystem, ID: [imap, default] complete
+11:34:57,743 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'email' subsystem, ID: [email, outbound]
+11:34:57,848 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'email' subsystem, ID: [email, outbound] complete
+11:34:57,848 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'email' subsystem, ID: [email, inbound]
+11:34:57,928 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'email' subsystem, ID: [email, inbound] complete
+11:34:57,929 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Subscriptions' subsystem, ID: [Subscriptions, default]
+11:34:57,959 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Subscriptions' subsystem, ID: [Subscriptions, default] complete
+11:34:57,970 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Synchronization' subsystem, ID: [Synchronization, default]
+11:34:58,054 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Synchronization' subsystem, ID: [Synchronization, default] complete
+11:34:58,069 INFO  [org.alfresco.service.descriptor.DescriptorService] Alfresco JVM - v1.8.0_121-b13; maximum heap size 999.000MB
+11:34:58,069 INFO  [org.alfresco.service.descriptor.DescriptorService] Server Mode :UNKNOWN
+11:34:58,073 INFO  [org.alfresco.service.descriptor.DescriptorService] Alfresco started (Community). Current version: 5.1.0 (r122274-b3) schema 9,016. Originally installed version: 5.1.0 (r122274-b3) schema 9,016.
+11:34:58,086 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default]
+11:34:58,342 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'ActivitiesFeed' subsystem, ID: [ActivitiesFeed, default] complete
+11:34:58,342 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Starting 'Replication' subsystem, ID: [Replication, default]
+11:34:58,371 INFO  [org.alfresco.repo.management.subsystems.ChildApplicationContextFactory] Startup of 'Replication' subsystem, ID: [Replication, default] complete
+11:35:04,098 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 397 Web Scripts (+0 failed), 547 URLs
+11:35:04,099 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Package Description Documents (+0 failed) 
+11:35:04,099 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+11:35:06,297 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 397 Web Scripts (+0 failed), 547 URLs
+11:35:06,297 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Package Description Documents (+0 failed) 
+11:35:06,297 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+11:35:06,300 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] Initialised Repository Web Script Container (in 6268.143ms)
+11:35:06,313 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] Registered template processor freemarker for extension ftl
+11:35:06,315 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] Registered script processor javascript for extension js
+11:35:08,804 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 397 Web Scripts (+0 failed), 547 URLs
+11:35:08,804 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 1 Package Description Documents (+0 failed) 
+11:35:08,804 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+11:35:08,919 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
+11:35:08,919 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
+11:35:08,919 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+11:35:09,036 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
+11:35:09,036 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
+11:35:09,036 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+11:35:09,040 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] Initialised Public Api Web Script Container (in 2562.4238ms)
+11:35:09,089 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 11 Web Scripts (+0 failed), 82 URLs
+11:35:09,089 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Package Description Documents (+0 failed) 
+11:35:09,089 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] Registered 0 Schema Description Documents (+0 failed) 
+11:35:11,913 WARN  [org.apache.myfaces.shared_impl.util.LocaleUtils] Locale name in faces-config.xml null or empty, setting locale to default locale : en_US
